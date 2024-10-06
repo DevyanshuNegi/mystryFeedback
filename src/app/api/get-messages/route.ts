@@ -26,9 +26,10 @@ export async function GET(request: Request) {
     ]).exec();
 
     if (!user || user.length === 0) {
+      console.log("get-messages: User not found");
       return Response.json(
-        { message: 'User not found', success: false },
-        { status: 404 }
+        { message: 'No New Message', success: true },
+        { status: 200 }
       );
     }
 
