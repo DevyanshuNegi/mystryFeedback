@@ -1,5 +1,5 @@
 'use client';
-
+// whole code form next auth docs
 import { SessionProvider } from 'next-auth/react';
 
 export default function AuthProvider({
